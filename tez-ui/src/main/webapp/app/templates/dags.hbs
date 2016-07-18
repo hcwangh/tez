@@ -17,7 +17,7 @@
 }}
 
 <ul class="breadcrumb">
-  <li>{{#link-to 'application'}}<i class="fa fa-home"> All DAGs</i>{{/link-to}} <span class="divider"></span></li>
+  <li>{{#link-to 'application'}}<i class="fa fa-home"> 所有的有向无环图</i>{{/link-to}} <span class="divider"></span></li>
 </ul>
 
 <div class='margin-small-vertical'>
@@ -31,27 +31,27 @@
       <div class="align-children-left">
         {{#if visibleFilters.dagName}}
           <div class='filter-elements'>
-            <div>Dag Name</div>
+            <div>Dag 名称</div>
             {{input
               action="filterUpdated"
               value=boundFilterValues.dagName
-              placeholder="Search..."
+              placeholder="搜索..."
             }}
           </div>
         {{/if}}
         {{#if visibleFilters.user}}
           <div class='filter-elements'>
-            <div>Submitter</div>
+            <div>提交者</div>
             {{input
               action="filterUpdated"
               value=boundFilterValues.user
-              placeholder="Search..."
+              placeholder="搜索..."
             }}
           </div>
         {{/if}}
         {{#if visibleFilters.status}}
           <div class='filter-elements'>
-            <div>Status</div>
+            <div>状态</div>
             {{view App.Dropdown
               optionValuePath='content.id'
               optionLabelPath='content.label'
@@ -64,11 +64,11 @@
         {{/if}}
         {{#if visibleFilters.appId}}
           <div class='filter-elements'>
-            <div>Application ID</div>
+            <div>应用程序 ID</div>
             {{input
               action="filterUpdated"
               value=boundFilterValues.appId
-              placeholder="Search..."
+              placeholder="搜索..."
             }}
           </div>
         {{/if}}

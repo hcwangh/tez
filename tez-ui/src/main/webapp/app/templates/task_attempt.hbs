@@ -17,10 +17,10 @@
 }}
 
 <ul class="breadcrumb">
-  <li>{{#link-to 'application'}}<i class="fa fa-home"> All DAGs</i>{{/link-to}} <span class="divider"></span></li>
+  <li>{{#link-to 'application'}}<i class="fa fa-home"> 所有的有向无环图</i>{{/link-to}} <span class="divider"></span></li>
   <li>{{#link-to 'dag.vertices' dagID}}DAG [ {{dagName}} ] {{/link-to}} <span class="divider"></span></li>
-  <li>{{#link-to 'vertex.tasks' vertexID}}Vertex [ {{vertexName}} ] {{/link-to}} <span class="divider"></span></li>
-  <li>{{#link-to 'task.attempts' taskID}}Task [ {{taskIndex}} ] {{/link-to}} <span class="divider"></span></li>
+  <li>{{#link-to 'vertex.tasks' vertexID}}顶点 [ {{vertexName}} ] {{/link-to}} <span class="divider"></span></li>
+  <li>{{#link-to 'task.attempts' taskID}}任务 [ {{taskIndex}} ] {{/link-to}} <span class="divider"></span></li>
   <li class="active">Task Attempt [ {{index}} ]</li>
 </ul>
 

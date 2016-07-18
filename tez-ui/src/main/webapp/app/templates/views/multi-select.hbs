@@ -22,7 +22,7 @@
 <div class="selection-list">
   <div class="search-option highlight">
     <div class="inline-block">
-      Select All<br/>
+      全选<br/>
       {{view App.Checkbox
         classNames='inline-display checkbox'
         checked=view.selectAll
@@ -33,7 +33,7 @@
     <div {{bind-attr class=":form-group view._validRegEx::has-error"}}>
       {{input
         class="form-control"
-        placeholder="Filter options"
+        placeholder="过滤器选项"
         value=view.searchRegex
       }}
     </div>
@@ -50,6 +50,6 @@
       </div>
     {{/each}}
   {{else}}
-    <h4>&nbsp;No options available...</h4>
+    <h4>&nbsp;没有可用的选项...</h4>
   {{/if}}
 </div>

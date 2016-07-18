@@ -32,7 +32,7 @@ App.TasksController = Em.ObjectController.extend(App.PaginatedContentMixin, App.
     status_filter: 'status'
   },
 
-  parentName: 'Loading...', // So that a proper message is displayed
+  parentName: '加载...', // So that a proper message is displayed
   vertexIdToNameMap: {},
   parentType: null,
   parentID: null,

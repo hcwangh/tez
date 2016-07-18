@@ -69,12 +69,12 @@ App.DagController = Em.ObjectController.extend(App.Helpers.DisplayHelper, {
   }.property('applicationId', 'appDetail', 'tezApp'),
 
   childDisplayViews: [
-    Ember.Object.create({title: 'DAG Details', linkTo: 'dag.index'}),
-    Ember.Object.create({title: 'DAG Counters', linkTo: 'dag.counters'}),
-    Ember.Object.create({title: 'Graphical View', linkTo: 'dag.view'}),
-    Ember.Object.create({title: 'All Vertices', linkTo: 'dag.vertices'}),
-    Ember.Object.create({title: 'All Tasks', linkTo: 'dag.tasks'}),
-    Ember.Object.create({title: 'All TaskAttempts', linkTo: 'dag.taskAttempts'}),
+    Ember.Object.create({title: 'DAG 详细信息', linkTo: 'dag.index'}),
+    Ember.Object.create({title: 'DAG 计数器', linkTo: 'dag.counters'}),
+    Ember.Object.create({title: '图形视图', linkTo: 'dag.view'}),
+    Ember.Object.create({title: '所有顶点', linkTo: 'dag.vertices'}),
+    Ember.Object.create({title: '所有任务', linkTo: 'dag.tasks'}),
+    Ember.Object.create({title: '所有 TaskAttempts', linkTo: 'dag.taskAttempts'}),
     Ember.Object.create({title: 'Swimlane', linkTo: 'dag.swimlane'})
   ],
 

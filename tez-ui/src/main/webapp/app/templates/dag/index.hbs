@@ -28,13 +28,13 @@
     <table class='detail-list'>
        <thead>
          <tr>
-            <th colspan=2>DAG Details</th>
+            <th colspan=2>DAG 详细信息</th>
          </tr>
       </thead>
       <tbody>
         <tr>
           <td colspan="2">
-            {{bs-button icon="fa fa-download" title="Download data" type="info" clicked="downloadDagJson"}}
+            {{bs-button icon="fa fa-download" title="下载数据" type="info" clicked="downloadDagJson"}}
           </td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@
             <i {{bind-attr class=':task-status taskIconStatus'}}></i> {{status}}
             {{#if progressStr}} {{bs-badge content=progressStr}}{{/if}}
             {{#if hasFailedTasks}}
-              [ <a href='{{unbound failedTasksLink}}'>Failed Tasks</a> ]
+              [ <a href='{{unbound failedTasksLink}}'>任务失败</a> ]
             {{/if}}
             {{#if hasFailedTaskAttempts}}
               [ <a href='{{unbound failedTaskAttemptsLink}}'>Failed TaskAttempts</a> ]

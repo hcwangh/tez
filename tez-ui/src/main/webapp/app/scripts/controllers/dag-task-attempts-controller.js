@@ -61,7 +61,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
     return [
       {
         id: 'taskId',
-        headerCellName: 'Task Index',
+        headerCellName: '任务 Index',
         templateName: 'components/basic-table/linked-cell',
         contentPath: 'taskID',
         getCellContent: function (row) {
@@ -120,7 +120,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'startTime',
-        headerCellName: 'Start Time',
+        headerCellName: '开始时间',
         contentPath: 'startTime',
         getCellContent: function(row) {
           return App.Helpers.date.dateFormat(row.get('startTime'));
@@ -131,7 +131,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'endTime',
-        headerCellName: 'End Time',
+        headerCellName: '结束时间',
         contentPath: 'endTime',
         getCellContent: function(row) {
           return App.Helpers.date.dateFormat(row.get('endTime'));
@@ -142,7 +142,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'duration',
-        headerCellName: 'Duration',
+        headerCellName: '持续时间',
         contentPath: 'duration',
         getCellContent: function(row) {
           return App.Helpers.date.timingFormat(row.get('duration'), 1);
@@ -153,7 +153,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'status',
-        headerCellName: 'Status',
+        headerCellName: '状态',
         templateName: 'components/basic-table/status-cell',
         contentPath: 'status',
         getCellContent: function(row) {
@@ -166,17 +166,17 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'containerId',
-        headerCellName: 'Container',
+        headerCellName: '容器',
         contentPath: 'containerId'
       },
       {
         id: 'nodeId',
-        headerCellName: 'Node',
+        headerCellName: '节点',
         contentPath: 'nodeId'
       },
       {
         id: 'actions',
-        headerCellName: 'Actions',
+        headerCellName: '动作',
         templateName: 'components/basic-table/linked-cell',
         searchAndSortable: false,
         contentPath: 'id',
@@ -191,7 +191,7 @@ App.DagTaskAttemptsController = App.TablePageController.extend({
       },
       {
         id: 'logs',
-        headerCellName: 'Logs',
+        headerCellName: '日志',
         templateName: 'components/basic-table/logs-cell',
         searchAndSortable: false,
         getCellContent: function(row) {

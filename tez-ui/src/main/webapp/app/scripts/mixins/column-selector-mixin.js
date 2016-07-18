@@ -40,7 +40,7 @@ App.ColumnSelectorMixin = Em.Mixin.create({
   columnConfigs: [],
   selectOptions: [],
 
-  columnSelectorTitle: 'Column Selector',
+  columnSelectorTitle: '列选择',
   columnSelectorMessage: '',
 
   init: function(){

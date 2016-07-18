@@ -32,7 +32,7 @@ App.TablePageController = Em.ObjectController.extend(
       isRefreshable: true,
 
       statusMessage: function () {
-        return this.get('loading') ? "Loading all records..." : null;
+        return this.get('loading') ? "加载所有记录..." : null;
       }.property('loading'),
 
       actions: {

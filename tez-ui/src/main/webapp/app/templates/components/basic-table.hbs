@@ -23,7 +23,7 @@
         {{#if enableSearch}}
           {{view App.BasicTableComponent.SearchView
             text=searchText
-            placeholder="RegEx or Column1, Column2... :RegEx"
+            placeholder="正则表达式 或 Column1, Column2... :正则表达式"
           }}
         {{/if}}
         <div class="table-message">
@@ -44,9 +44,9 @@
   {{/if}}
   <div class='table-body-container'>
     {{#unless _columns.length}}
-      <div class="data-availability-message">No columns available!</div>
+      <div class="data-availability-message">无可用列!</div>
     {{else}}{{#unless _rows.length}}
-      <div class="data-availability-message">No records available!</div>
+      <div class="data-availability-message">无记录!</div>
     {{else}}
       <div class='table-body'>
         {{#each column in _columns}}

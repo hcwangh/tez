@@ -23,14 +23,14 @@
     </div><div class="horizontal-half align-children-right">
       <span class="margin-small-horizontal">
         {{#if displayTime}}
-          Last refreshed at <b>{{displayTime}}</b>
+         最近刷新时间是 <b>{{displayTime}}</b>
         {{else}}
-          Load time not available!
+            加载时间不可用!
         {{/if}}
       </span>
       <button type="button" {{bind-attr class=":btn :btn-success :btn-sm isRefreshable::no-display"}} {{action 'refresh'}}>
         <i class='fa fa-refresh'></i>
-        Refresh
+          刷新
       </button>
     </div>
   </div>
